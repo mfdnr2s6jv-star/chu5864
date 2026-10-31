@@ -546,7 +546,7 @@ async function openRoom(id){
  if(id=='sh'&&(S.step==8||S.step==9.05)&&!S.c9){S.t9=Date.now();stat(id);if(S.step==9.05){S.c9=1;nineB()}return}
  stat(id);
  if(id=='sh'&&S.step==4.1&&!S.c41){S.c41=1;const t0=S.tok;await sleep(300);await call('010-2007-0919',[['상대','차단했나 해서'],['립우','안했어']]);if(t0!=S.tok)return}
- if(id=='sw'&&S.step==0){setStep(1);{const g0=GEN;setTimeout(()=>{if(g0==GEN)first()},20000)};return}
+ if(id=='sw'&&S.step==0){setStep(1);{const g0=GEN;setTimeout(()=>{if(g0==GEN)first()},2500)};return}
  if(S.step>=15&&['sh','hm','wj'].includes(id))return free(id);
  if(id=='sh'&&S.step==2&&!S.f2){S.f2=1;return}
  const pl=(PLAY[id]||{})[S.step];if(!pl)return;
